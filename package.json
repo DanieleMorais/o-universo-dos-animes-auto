@@ -1,0 +1,8 @@
+{
+  "name": "o-universo-dos-animes-auto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Robo do blog O Mundo dos Animes (ouniversoanimes.blogspot.com)",
+  "type": "commonjs",
+  "scripts": { "post": "node scripts/daily-post.js", "news": "node scripts/news-batch.js" }
+}

@@ -1,0 +1,27 @@
+name: Notícias de anime (10 a cada 4h)
+
+on:
+  schedule:
+    - cron: "0 2,6,10,14,18,22 * * *"   # de 4 em 4h (offset das outras redes)
+  workflow_dispatch:
+
+jobs:
+  noticias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Publicar até 10 notícias de anime
+        env:
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+          IMG_BASE: ${{ secrets.IMG_BASE }}
+          PER_RUN: "10"
+        run: node scripts/news-batch.js
