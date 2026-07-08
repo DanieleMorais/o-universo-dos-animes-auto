@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' b:layoutsVersion='3' b:responsive='true' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='ca-pub-1623504542591354' name='google-adsense-account'/>
+<b:include data='blog' name='all-head-content'/>
+<b:if cond='data:view.isHomepage or data:view.isMultipleItems'><meta content='Notícias, reviews e guias de animes todo dia. Lançamentos, onde assistir, mangás e cultura otaku — seu portal de animes em português.' name='description'/><b:else/><b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' name='description'/></b:if></b:if>
+<link href='https://fonts.googleapis.com' rel='preconnect'/>
+<link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
+<link rel='icon' href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8E%8C%3C/text%3E%3C/svg%3E"/>
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-TGRD6F7XHK'></script>
+<script>//<![CDATA[
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TGRD6F7XHK');
+//]]></script>
+<meta content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' name='robots'/>
+<meta content='summary_large_image' name='twitter:card'/>
+<title><b:if cond='data:view.isHomepage'><data:blog.title/></b:if><b:if cond='!data:view.isHomepage'><data:view.title.escaped/> ~ <data:blog.title/></b:if></title>
+<b:skin><![CDATA[
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
+:root,html.t-claro{--bg:#fdf2f8;--bgimg:none;--surf:#fff;--surf2:#fef6fb;--tx:#2a1330;--tx2:#8a5a7a;--bd:#f5dced;--pri:#db2777;--acc:#7c3aed;--nav:#2a0f35;--navtx:#fbe4f2;--head:#fff;--foot:#2a0f35;--foottx:#e6c9df;--chip:#fce7f3;--chipt:#db2777;--logo:linear-gradient(90deg,#db2777,#ec4899 55%,#7c3aed);--sh:0 6px 22px rgba(219,39,119,.14)}
+html.t-dark{--bg:#070b16;--bgimg:radial-gradient(1200px 600px at 15% -10%,rgba(37,99,235,.28),transparent 60%),radial-gradient(1000px 500px at 100% 0%,rgba(16,185,129,.18),transparent 55%);--surf:#131c30;--surf2:rgba(255,255,255,.03);--tx:#e6ecf5;--tx2:#9fb2d6;--bd:rgba(255,255,255,.10);--pri:#38bdf8;--acc:#34d399;--nav:rgba(9,14,26,.92);--navtx:#cdd8ec;--head:linear-gradient(120deg,#0b1220,#111a35 45%,#0a1f2e);--foot:linear-gradient(180deg,#0a0f1e,#05070f);--foottx:#93a3c4;--chip:rgba(56,189,248,.14);--chipt:#7dd3fc;--logo:linear-gradient(90deg,#fff,#7dd3fc 45%,#34d399);--sh:0 8px 30px -12px rgba(0,0,0,.6)}
+html.t-dourado{--bg:#08060f;--bgimg:radial-gradient(1000px 500px at 50% -10%,rgba(34,211,238,.22),transparent 60%);--surf:#0e1020;--surf2:rgba(255,255,255,.035);--tx:#eafaff;--tx2:#9fb8cf;--bd:rgba(255,255,255,.10);--pri:#22d3ee;--acc:#ec4899;--nav:rgba(6,8,18,.92);--navtx:#c5eef5;--head:linear-gradient(120deg,#06101c,#0a1f2e 45%,#1a0a2e);--foot:linear-gradient(180deg,#04060f,#02040a);--foottx:#9fc4d4;--chip:rgba(34,211,238,.15);--chipt:#67e8f9;--logo:linear-gradient(90deg,#22d3ee,#67e8f9 45%,#ec4899);--sh:0 8px 30px -12px rgba(0,0,0,.6)}
+*{box-sizing:border-box}
+body{font-family:'Inter',system-ui,Arial,sans-serif;background:var(--bg);background-image:var(--bgimg);color:var(--tx);line-height:1.65;font-size:16px;margin:0}
+a{color:var(--pri);text-decoration:none;transition:.2s}a:hover{color:var(--acc)}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1600px;margin:0 auto;padding:0 18px}
+.topbar{background:var(--surf2);border-bottom:1px solid var(--bd);font-size:12.5px;color:var(--tx2)}
+.topbar .in{max-width:1600px;margin:0 auto;padding:8px 18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.topbar b{color:var(--acc)}.topbar span{margin-right:14px}
+header#hd{background:var(--head);border-bottom:1px solid var(--bd);box-shadow:var(--sh)}
+.hd-in{display:flex;align-items:center;justify-content:space-between;padding:22px 18px;max-width:1600px;margin:0 auto;gap:16px;flex-wrap:wrap}
+.Header h1,.Header .title{font-family:'Poppins';font-weight:800;font-size:30px;letter-spacing:-1px;margin:0;background:var(--logo);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.05}
+.Header h1 a{color:transparent!important}
+.Header .description{color:var(--tx2);font-size:13.5px;margin-top:6px}
+.searchbox{display:flex;align-items:center;background:var(--surf2);border:1px solid var(--bd);border-radius:50px;padding:9px 16px;min-width:220px;color:var(--tx2)}
+.searchbox input{border:0;background:transparent;outline:0;color:var(--tx);width:100%;margin-left:8px}
+nav#menu{background:var(--nav);position:sticky;top:0;z-index:50;box-shadow:var(--sh)}
+nav#menu ul{display:flex;flex-wrap:wrap;list-style:none;max-width:1600px;margin:0 auto;padding:0 18px}
+nav#menu a{display:block;padding:15px 17px;font-family:'Poppins';font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--navtx);position:relative}
+nav#menu a:hover{color:#fff;background:rgba(255,255,255,.08)}
+nav#menu a.tool{color:var(--acc)}
+.body2{max-width:1600px;margin:26px auto;padding:0 18px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+@media(max-width:900px){.body2{grid-template-columns:1fr}}
+.chip{display:inline-block;background:var(--pri);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;padding:3px 10px;border-radius:50px}
+.sect{display:flex;align-items:center;gap:12px;margin:30px 0 16px}
+.sect .bar{width:5px;height:24px;background:linear-gradient(180deg,var(--pri),var(--acc));border-radius:3px}
+.sect h2{font-family:'Poppins';font-weight:800;font-size:20px;margin:0}
+.sect .more{margin-left:auto;font-size:13px;font-weight:700;color:var(--pri)}
+.p-hero{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;margin-bottom:8px}
+@media(max-width:640px){.p-hero{grid-template-columns:1fr}}
+.p-hcard{position:relative;border-radius:16px;overflow:hidden;min-height:320px;background:#0b1220;box-shadow:var(--sh);display:block}
+.p-hcard.sm{min-height:150px}
+.p-hcard img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.p-hcard .ov{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(3,7,18,.9));display:flex;flex-direction:column;justify-content:flex-end;padding:20px}
+.p-hcard h2{color:#fff;font-family:'Poppins';font-weight:800;font-size:23px;line-height:1.2;margin:6px 0 0}
+.p-hcard.sm h3{color:#fff;font-family:'Poppins';font-weight:700;font-size:15px;margin:6px 0 0}
+.p-hsub{display:grid;grid-template-rows:1fr 1fr;gap:16px}
+@media(max-width:640px){.p-hsub{grid-template-columns:1fr 1fr;grid-template-rows:none}}
+.p-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.p-card{background:var(--surf);border:1px solid var(--bd);border-radius:16px;overflow:hidden;box-shadow:var(--sh);transition:.3s;display:flex;flex-direction:column}
+.p-card:hover{transform:translateY(-5px);box-shadow:0 20px 45px -18px rgba(26,79,160,.4)}
+.p-card .th{aspect-ratio:16/9;overflow:hidden;display:block;background:var(--surf2)}
+.p-card .th img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.p-card:hover .th img{transform:scale(1.06)}
+.p-card .bd{padding:15px 18px 18px;display:flex;flex-direction:column;flex:1}
+.p-card h3{font-family:'Poppins';font-weight:700;font-size:16px;line-height:1.3;margin:9px 0}
+.p-card h3 a{color:var(--tx)}.p-card h3 a:hover{color:var(--pri)}
+.p-card p{font-size:13.5px;color:var(--tx2);flex:1;margin:0}
+.videos{background:var(--surf2);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:28px 0}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.vcard{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/9;box-shadow:var(--sh)}
+.vcard img{width:100%;height:100%;object-fit:cover}
+.vcard .pl{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.92)}
+.vcard .pl:after{content:'';position:absolute;top:50%;left:56%;transform:translate(-50%,-50%);border-left:15px solid var(--pri);border-top:9px solid transparent;border-bottom:9px solid transparent}
+.toolgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:760px){.toolgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.toolgrid{grid-template-columns:1fr}}
+.tool-c{background:var(--surf);border:1px solid var(--bd);border-radius:14px;padding:22px 24px;box-shadow:var(--sh);font-family:'Poppins';font-weight:700;font-size:15.5px;color:var(--tx);display:flex;align-items:center;gap:14px;min-height:74px}
+.tool-c:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-3px)}
+.tool-c .i{width:44px;height:44px;border-radius:11px;background:var(--chip);color:var(--chipt);display:flex;align-items:center;justify-content:center;flex:0 0 44px;font-size:21px}
+.art{background:var(--surf);border:1px solid var(--bd);border-radius:18px;padding:32px;box-shadow:var(--sh)}
+.art h1{font-family:'Poppins';font-weight:800;font-size:32px;line-height:1.2;margin:12px 0 14px}
+.artmeta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:var(--tx2);font-size:13px;border-bottom:1px solid var(--bd);padding-bottom:16px;margin-bottom:18px}
+.artbody{font-size:17px;line-height:1.85}
+.artbody h2{font-family:'Poppins';color:var(--pri);font-size:1.5em;border-bottom:2px solid var(--bd);padding-bottom:6px;margin:1.4em 0 .5em}
+.artbody h3{font-family:'Poppins';font-size:1.2em;margin:1.2em 0 .4em}
+.artbody img{border-radius:12px;margin:16px 0}
+.artbody table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--bd);border-radius:12px;overflow:hidden;margin:1.4em 0}
+.artbody th{background:var(--pri);color:#fff;padding:11px 15px;text-align:left}
+.artbody td{padding:10px 15px;border-bottom:1px solid var(--bd)}
+.artbody blockquote{border-left:4px solid var(--acc);background:var(--surf2);padding:14px 20px;border-radius:0 10px 10px 0;font-style:italic;margin:1.3em 0}
+.labels a{background:var(--chip);color:var(--chipt);padding:5px 12px;border-radius:50px;font-size:12.5px;font-weight:600;display:inline-block;margin:4px 4px 0 0}
+.side .widget{background:var(--surf);border:1px solid var(--bd);border-radius:16px;padding:20px;margin:0 0 22px;box-shadow:var(--sh)}
+.side .widget h2,.side .widget h3{font-family:'Poppins';font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--tx2);border-bottom:2px solid var(--bd);padding-bottom:10px;margin:0 0 14px}
+.side .widget ul{list-style:none;margin:0;padding:0}
+.side .widget li{padding:9px 0;border-bottom:1px solid var(--bd);font-size:14px}
+.side .widget li:last-child{border:0}
+.side .widget a{color:var(--tx);font-weight:500}.side .widget a:hover{color:var(--pri)}
+.side .Label a{background:var(--chip);color:var(--chipt);padding:5px 11px;border-radius:50px;font-size:12.5px;font-weight:600;display:inline-block;margin:3px}
+.ad{background:var(--surf2);border:1px dashed var(--pri);border-radius:14px;text-align:center;padding:16px;margin:22px 0;color:var(--tx2);font-size:12px}
+html.t-dark .artbody [style*="linear-gradient(135deg,#f"],html.t-dark .artbody [style*="linear-gradient(135deg,#f"] *,html.t-dark .artbody [style*="background:#f"],html.t-dark .artbody [style*="background:#f"] *,html.t-dark .artbody [style*="background: #f"],html.t-dark .artbody [style*="background: #f"] *,html.t-dark .artbody [style*="background:#e"],html.t-dark .artbody [style*="background:#e"] *,html.t-dark .artbody [style*="background:rgb(2"],html.t-dark .artbody [style*="background:rgb(2"] *{color:#17202e !important}
+footer#ft{background:var(--foot);color:var(--foottx);margin-top:44px;padding:40px 0 0}
+footer#ft .fcols{max-width:1600px;margin:0 auto;padding:0 18px 30px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:34px}
+@media(max-width:900px){footer#ft .fcols{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){footer#ft .fcols{grid-template-columns:1fr}}
+footer#ft .fcols a{display:block;padding:4px 0;font-size:13.5px;color:var(--foottx);opacity:.9}
+footer#ft .fcols a:hover{color:var(--acc);opacity:1}
+footer#ft .fcols br{display:none}
+footer#ft h2,footer#ft h3,footer#ft .widget h2{color:#fff;font-family:'Poppins';font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
+footer#ft a{color:var(--acc)}
+footer#ft .widget{background:transparent;border:0;padding:0;box-shadow:none;margin:0}
+footer#ft .flogo{font-family:'Poppins';font-weight:800;font-size:22px;color:#fff;margin-bottom:8px}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding:16px;text-align:center;font-size:12.5px;opacity:.75;max-width:1600px;margin:0 auto}
+.blog-pager{text-align:center;margin:30px 0}
+.blog-pager a{display:inline-block;padding:10px 26px;border-radius:50px;background:var(--surf);border:2px solid var(--pri);color:var(--pri);font-weight:700;margin:0 6px}
+.blog-pager a:hover{background:var(--pri);color:#fff}
+#tdrawer{position:fixed;right:16px;bottom:16px;z-index:9999;font-family:'Poppins'}
+#tbtn{background:linear-gradient(135deg,var(--pri),var(--acc));color:#fff;border:0;border-radius:50px;padding:12px 18px;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35);font-size:14px}
+#tpanel{position:absolute;right:0;bottom:54px;background:var(--surf);border:1px solid var(--bd);border-radius:14px;padding:14px;box-shadow:0 12px 40px rgba(0,0,0,.4);width:210px;display:none}
+#tdrawer.open #tpanel{display:block}
+#tpanel b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--tx2);margin-bottom:10px}
+#tpanel button{display:block;width:100%;text-align:left;padding:10px 12px;border:0;border-radius:10px;font-weight:600;font-size:14px;color:var(--tx);background:transparent;cursor:pointer}
+#tpanel button:hover{background:var(--chip);color:var(--chipt)}
+]]></b:skin>
+</head>
+<body>
+<div class='topbar'><div class='in'><div><span>🎌 O portal otaku em português</span><span>🆕 Notícias todo dia</span><span>⭐ Reviews e guias</span></div><div>Seu universo de animes</div></div></div>
+<header id='hd'><div class='hd-in'>
+<b:section id='header' class='header-sec' maxwidgets='1' showaddelement='no'><b:widget id='Header1' type='Header' version='2'/></b:section>
+<form class='searchbox' expr:action='data:blog.searchUrl' method='get'>🔎<input name='q' placeholder='Buscar no site...' type='text'/></form>
+</div></header>
+<nav id='menu'><ul>
+<li><a expr:href='data:blog.homepageUrl'>Início</a></li>
+<li><a expr:href='data:blog.homepageUrl + &quot;search/label/Lan%C3%A7amentos&quot;'>Lançamentos</a></li>
+<li><a expr:href='data:blog.homepageUrl + &quot;search/label/Reviews&quot;'>Reviews</a></li>
+<li><a expr:href='data:blog.homepageUrl + &quot;search/label/G%C3%AAneros&quot;'>Gêneros</a></li>
+<li><a expr:href='data:blog.homepageUrl + &quot;search/label/Onde Assistir&quot;'>Onde Assistir</a></li>
+<li><a expr:href='data:blog.homepageUrl + &quot;search/label/Mang%C3%A1&quot;'>Mangá</a></li>
+<li><a class='tool' expr:href='data:blog.homepageUrl + &quot;search/label/Cultura Otaku&quot;'>Cultura</a></li>
+<li><a href='/p/sobre.html'>Sobre</a></li>
+</ul></nav>
+<div class='body2'>
+<main id='main-col'>
+<div class='ad'>Publicidade (AdSense)</div>
+<b:section id='main' class='main-sec' showaddelement='no'>
+<b:widget id='Blog1' type='Blog' version='2'>
+<b:includable id='main'>
+<b:if cond='data:view.isPost or data:view.isPage'>
+<b:loop var='post' values='data:posts'>
+<article class='art'>
+<b:if cond='data:post.labels'><b:loop var='l' values='data:post.labels' index='j'><b:if cond='data:j == 0'><span class='chip'><data:l.name/></span></b:if></b:loop></b:if>
+<h1><data:post.title/></h1>
+<div class='artmeta'><span>📅 <data:post.date/></span><span>·</span><span>O Mundo dos Animes</span></div>
+<div class='ad'>Publicidade (AdSense)</div>
+<div class='artbody'><data:post.body/></div>
+<b:if cond='data:post.labels'><div class='labels'><b:loop var='l' values='data:post.labels'><a expr:href='data:l.url'><data:l.name/></a></b:loop></div></b:if>
+</article>
+<b:include data='post' name='comments'/>
+</b:loop>
+</b:if>
+</b:includable>
+</b:widget>
+</b:section>
+</main>
+<aside class='side'>
+<b:section id='sidebar' class='side-sec' showaddelement='yes'>
+<b:widget id='PopularPosts1' type='PopularPosts' version='2'/>
+<b:widget id='AdSense1' type='AdSense' version='2'/>
+<b:widget id='Label1' type='Label' version='2'/>
+<b:widget id='BlogArchive1' type='BlogArchive' version='2'/>
+<b:widget id='Profile1' type='Profile' version='2'/>
+</b:section>
+</aside>
+</div>
+<footer id='ft'>
+<div class='fcols'>
+<div><div class='flogo'>O Mundo dos Animes</div><p style='font-size:13.5px;opacity:.85'>Notícias, reviews e guias de animes em português, todos os dias. Seu universo otaku!</p></div>
+<div><h3>Categorias</h3><a expr:href='data:blog.homepageUrl + &quot;search/label/Lan%C3%A7amentos&quot;'>Lançamentos</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Reviews&quot;'>Reviews</a><a expr:href='data:blog.homepageUrl + &quot;search/label/G%C3%AAneros&quot;'>Gêneros</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Onde Assistir&quot;'>Onde Assistir</a></div><div><h3>Explorar</h3><a expr:href='data:blog.homepageUrl + &quot;search/label/Mang%C3%A1&quot;'>Mangá</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Personagens&quot;'>Personagens</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Not%C3%ADcias&quot;'>Notícias</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Cultura Otaku&quot;'>Cultura Otaku</a></div>
+<div><h3>Institucional</h3><a href='/p/sobre.html'>Sobre</a><a href='/p/contato.html'>Contato</a><a href='/p/politica-de-privacidade.html'>Privacidade</a><a href='/p/termos-de-uso.html'>Termos de Uso</a></div>
+</div>
+<b:section id='foot-attr' class='foot-attr' showaddelement='no'><b:widget id='Attribution1' type='Attribution' version='2'/></b:section>
+<div class='fbot'>© 2026 O Mundo dos Animes · Todos os direitos reservados · Feito por <a href='https://agenciafadamadrinha.com' target='_blank' rel='noopener' style='color:var(--acc);font-weight:700;text-decoration:none'>Agência Fada Madrinha</a> 💛</div>
+</footer>
+<div id='tdrawer'><button id='tbtn' onclick="document.getElementById('tdrawer').classList.toggle('open')">🎨 Tema</button>
+<div id='tpanel'><b>Escolha o tema</b><button onclick="setTema('claro')">🌸 Neon Rosa</button><button onclick="setTema('dark')">☀️ Claro</button><button onclick="setTema('dourado')">💠 Cyber</button></div></div>
+<script>//<![CDATA[
+function setTema(t){document.documentElement.className='t-'+t;try{localStorage.setItem('tema',t);}catch(e){}}
+(function(){var t='claro';try{t=localStorage.getItem('tema')||'claro';}catch(e){}document.documentElement.className='t-'+t;})();
+//]]></script>
+<div style='display:none!important;visibility:hidden;height:0;overflow:hidden' aria-hidden='true'>
+  <b:section id='trash' class='trash' showaddelement='no' maxwidgets='40'>
+    <b:widget id='HTML1' type='HTML' locked='false' title='' visible='false'/>
+    <b:widget id='PageList8' type='PageList' locked='false' title='' visible='false'/>
+    <b:widget id='HTML2' type='HTML' locked='false' title='' visible='false'/>
+    <b:widget id='BlogSearch1' type='BlogSearch' locked='false' title='' visible='false'/>
+    <b:widget id='AdSense2' type='AdSense' locked='false' title='' visible='false'/>
+    <b:widget id='ReportAbuse1' type='ReportAbuse' locked='false' title='' visible='false'/>
+    <b:widget id='FeaturedPost1' type='FeaturedPost' locked='false' title='' visible='false'/>
+    <b:widget id='Label3' type='Label' locked='false' title='' visible='false'/>
+    <b:widget id='BlogArchive2' type='BlogArchive' locked='false' title='' visible='false'/>
+    <b:widget id='HTML6' type='HTML' locked='false' title='' visible='false'/>
+    <b:widget id='HTML5' type='HTML' locked='false' title='' visible='false'/>
+    <b:widget id='HTML4' type='HTML' locked='false' title='' visible='false'/>
+    <b:widget id='HTML3' type='HTML' locked='false' title='' visible='false'/>
+    <b:widget id='PageList1' type='PageList' locked='false' title='' visible='false'/>
+  </b:section>
+</div>
+
+
+
+
+
+
+
+<script type='text/javascript'>
+//<![CDATA[
+(function(){
+  function im(c){var m=(c||"").match(/<img[^>]+src=["']([^"']+)["']/i);return m?m[1]:"https://image.pollinations.ai/prompt/financas%20dinheiro%20brasil?width=600&height=340&nologo=true";}
+  function lk(x){for(var i=0;i<x.link.length;i++){if(x.link[i].rel=="alternate")return x.link[i].href;}return "#";}
+  function ct(x){return (x.category&&x.category[0])?x.category[0].term:"Finanças";}
+  function sn(c){return (c||"").replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim().slice(0,120);}
+  function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function q(s){return String(s).replace(/"/g,"&quot;");}
+  function run(){
+    if(document.querySelector(".artbody")||document.querySelector(".art")){return;}
+    var main=document.getElementById("main");
+    if(!main){return;}
+    var root=document.getElementById("portalRoot");
+    if(!root){root=document.createElement("div");root.id="portalRoot";main.appendChild(root);}
+    root.innerHTML="<p style='color:var(--tx2);padding:16px'>Carregando conteudo...</p>";
+    var path=location.pathname;
+    var feed="/feeds/posts/default?alt=json&max-results=13";
+    var lm=path.match(/\/search\/label\/([^?\/]+)/);
+    if(lm){feed="/feeds/posts/default/-/"+lm[1]+"?alt=json&max-results=13";}
+    var home=(path=="/"||path==""||path=="/index.html");
+    fetch(feed).then(function(r){return r.json();}).then(function(d){
+      var e=(d.feed&&d.feed.entry)||[];
+      if(!e.length){root.innerHTML="";return;}
+      function card(x){var c=x.content?x.content.$t:(x.summary?x.summary.$t:"");var u=q(lk(x));return "<article class='p-card'><a class='th' href='"+u+"'><img src='"+q(im(c))+"' loading='lazy' alt='"+q(esc(x.title.$t))+"'/></a><div class='bd'><span class='chip'>"+esc(ct(x))+"</span><h3><a href='"+u+"'>"+esc(x.title.$t)+"</a></h3><p>"+esc(sn(c))+"</p></div></article>";}
+      function hc(x,sm){var c=x.content?x.content.$t:"";var u=q(lk(x));var t=esc(x.title.$t);return "<a class='p-hcard"+(sm?" sm":"")+"' href='"+u+"'><img src='"+q(im(c))+"' alt='"+q(t)+"'/><div class='ov'><span class='chip'>"+esc(ct(x))+"</span>"+(sm?"<h3>":"<h2>")+t+(sm?"</h3>":"</h2>")+"</div></a>";}
+      var html="";var start=0;
+      if(home){html+="<section class='p-hero'>"+hc(e[0],false)+"<div class='p-hsub'>"+(e[1]?hc(e[1],true):"")+(e[2]?hc(e[2],true):"")+"</div></section>";start=3;}
+      html+="<div class='p-grid'>";for(var i=start;i<e.length;i++){html+=card(e[i]);}html+="</div>";
+      if(home){
+        var tools=[
+["🆕","Lançamentos","/search/label/Lan%C3%A7amentos"],
+["⭐","Reviews","/search/label/Reviews"],
+["🌸","Gêneros","/search/label/G%C3%AAneros"],
+["📺","Onde Assistir","/search/label/Onde Assistir"],
+["📖","Mangá","/search/label/Mang%C3%A1"],
+["🎭","Personagens","/search/label/Personagens"],
+["📰","Notícias","/search/label/Not%C3%ADcias"],
+["⛩️","Cultura Otaku","/search/label/Cultura Otaku"],
+["🔥","Mais Populares","/search/label/Reviews"]
+];
+        html+="<div class='sect'><span class='bar'></span><h2>🎌 Explore por Categoria</h2><a class='more' href='/'>Ver tudo &#8594;</a></div>";
+        html+="<div class='toolgrid'>";
+        for(var t=0;t<tools.length;t++){html+="<a class='tool-c' href='"+tools[t][2]+"'><span class='i'>"+tools[t][0]+"</span>"+tools[t][1]+"</a>";}
+        html+="</div>";
+      }
+      root.innerHTML=html;
+    }).catch(function(err){root.innerHTML="";});
+  }
+  function cookieBanner(){
+    try{ if(localStorage.getItem("ddad_cookie")=="1"){return;} }catch(e){}
+    if(document.getElementById("cookieBar")){return;}
+    var bar=document.createElement("div");
+    bar.id="cookieBar";
+    bar.setAttribute("style","position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:9999;width:min(680px,calc(100% - 24px));background:linear-gradient(135deg,#12213f,#1a3566);color:#f3ecda;border:1px solid rgba(201,162,39,.5);border-radius:16px;box-shadow:0 18px 50px -12px rgba(0,0,0,.55);padding:16px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:Inter,system-ui,Arial,sans-serif;font-size:13.5px;line-height:1.5");
+    bar.innerHTML="<span style='font-size:24px;line-height:1'>🍪</span>"+
+      "<span style='flex:1;min-width:220px'>Usamos cookies para melhorar sua experiência, analisar o tráfego e exibir anúncios relevantes. Ao continuar navegando, você concorda com a nossa <a href='/p/politica-de-privacidade.html' style='color:#f0c948;font-weight:700;text-decoration:underline'>Política de Privacidade</a>.</span>"+
+      "<button id='ckAccept' style='background:linear-gradient(135deg,#c9a227,#e9c766);color:#1a1206;border:0;border-radius:50px;padding:11px 26px;font-weight:800;font-family:Poppins,sans-serif;font-size:13.5px;cursor:pointer;white-space:nowrap;box-shadow:0 6px 16px -4px rgba(201,162,39,.6)'>Aceitar e continuar</button>";
+    document.body.appendChild(bar);
+    document.getElementById("ckAccept").onclick=function(){try{localStorage.setItem("ddad_cookie","1");}catch(e){}bar.style.transition="opacity .3s,transform .3s";bar.style.opacity="0";bar.style.transform="translateX(-50%) translateY(20px)";setTimeout(function(){if(bar.parentNode){bar.parentNode.removeChild(bar);}},320);};
+  }
+  function mtag(p){var m=document.querySelector('meta[property="'+p+'"],meta[name="'+p+'"]');return m?(m.getAttribute("content")||""):"";}
+  function injectJsonLd(){
+    if(!document.querySelector(".artbody")){return;} // só em páginas de post
+    if(document.getElementById("ld-post")){return;}
+    var h1=document.querySelector(".art h1");
+    var title=((h1&&h1.textContent)||mtag("og:title")||document.title||"").trim();
+    if(!title){return;}
+    var img=mtag("og:image");
+    var desc=mtag("og:description");
+    var canonEl=document.querySelector('link[rel="canonical"]');
+    var canon=(canonEl&&canonEl.href)||location.href.split("#")[0].split("?")[0];
+    var pub=mtag("article:published_time");
+    var data={"@context":"https://schema.org","@type":"BlogPosting","headline":title.slice(0,110),"mainEntityOfPage":{"@type":"WebPage","@id":canon},"url":canon,"author":{"@type":"Organization","name":"O Mundo dos Animes"},"publisher":{"@type":"Organization","name":"O Mundo dos Animes"},"inLanguage":"pt-BR"};
+    if(img){data.image=[img];}
+    if(desc){data.description=desc;}
+    if(pub){data.datePublished=pub;data.dateModified=mtag("article:modified_time")||pub;}
+    var s=document.createElement("script");s.type="application/ld+json";s.id="ld-post";s.textContent=JSON.stringify(data);
+    document.head.appendChild(s);try{var fh=Array.prototype.slice.call(document.querySelectorAll(".artbody h2")).filter(function(h){return /pergunt|faq/i.test(h.textContent)})[0];if(fh){var fq=[],e=fh.nextElementSibling;while(e&&e.tagName!="H2"){if(e.tagName=="H3"){var q=e.textContent.trim(),a="",n=e.nextElementSibling;while(n&&n.tagName!="H2"&&n.tagName!="H3"){if(n.textContent)a+=n.textContent.trim()+" ";n=n.nextElementSibling}if(q&&a)fq.push({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:a.trim()}})}e=e.nextElementSibling}if(fq.length&&!document.getElementById("ld-faq")){var f2=document.createElement("script");f2.type="application/ld+json";f2.id="ld-faq";f2.textContent=JSON.stringify({"@context":"https://schema.org","@type":"FAQPage",mainEntity:fq});document.head.appendChild(f2)}}}catch(er){}
+  }
+  function boot(){ run(); cookieBanner(); injectJsonLd(); }
+  if(document.readyState!="loading"){boot();}else{document.addEventListener("DOMContentLoaded",boot);}
+})();
+
+//]]>
+</script>
+</body>
+</html>
