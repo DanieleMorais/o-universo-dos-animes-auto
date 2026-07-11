@@ -4,7 +4,10 @@ on:
   schedule:
     - cron: "0 2,6,10,14,18,22 * * *"   # de 4 em 4h (offset das outras redes)
   workflow_dispatch:
-
+    inputs:
+      per_run:
+        description: Quantos publicar
+        default: "30"
 jobs:
   noticias:
     runs-on: ubuntu-latest
@@ -23,5 +26,5 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
           IMG_BASE: ${{ secrets.IMG_BASE }}
-          PER_RUN: "10"
+          PER_RUN: ${{ github.event.inputs.per_run || '10' }}
         run: node scripts/news-batch.js
