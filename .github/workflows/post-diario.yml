@@ -22,6 +22,7 @@ jobs:
           BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
           BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
           IMG_BASE: ${{ secrets.IMG_BASE }}
         run: node scripts/daily-post.js
