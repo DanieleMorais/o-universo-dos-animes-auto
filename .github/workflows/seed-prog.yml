@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: "0 18 * * *"
   workflow_dispatch:
+    inputs:
+      limit:
+        description: "Quantos posts publicar neste lote"
+        required: false
+        default: "13" 
 permissions:
   actions: write
 jobs:
@@ -23,7 +28,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
           IMG_BASE: ${{ secrets.IMG_BASE }}
-          LIMIT: "13"
+          LIMIT: ${{ github.event.inputs.limit || '13' }}
         run: node scripts/seed-batch.js 2>&1 | tee saida.log
       - name: Desligar quando o pool acabar
         run: |
