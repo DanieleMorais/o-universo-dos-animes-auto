@@ -1,0 +1,33 @@
+name: Remediacao AdSense (enriquecer conteudo raso)
+on:
+  schedule:
+    - cron: "40 9 * * *"
+  workflow_dispatch:
+permissions:
+  actions: write
+jobs:
+  enriquecer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Enriquecer paginas e posts
+        env:
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+        run: node scripts/enrich.js 2>&1 | tee saida.log
+      - name: Desligar quando terminar tudo
+        run: |
+          if grep -q "TUDO-PRONTO" saida.log; then
+            curl -s -X PUT -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/workflows/enrich.yml/disable"
+            echo "Remediacao completa — workflow desligado. ✅"
+          fi
